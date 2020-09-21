@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
+    "format": "yarn run prettier -- --write",
+    "check-format": "yarn run prettier -- --list-different",
+    "check-types": "tsc"
   },
   "dependencies": {
     "next": "9.5.3",
