@@ -1,0 +1,13 @@
+image: node:12.18.4
+
+pipelines:
+  default:
+    - step:
+        max-time: 120
+        size: 1x
+        script:
+          - npm run check-types && npm run check-format
+          - npm install
+          - npm run build
+          - npm run test
+        trigger: automatic
