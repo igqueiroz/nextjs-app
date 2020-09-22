@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Title from 'components/Title'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <h1>Agenda 4 Pets</h1>
+      <Title>Agenda 4 Pets</Title>
     </div>
   )
 }
